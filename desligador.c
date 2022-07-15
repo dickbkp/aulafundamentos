@@ -26,3 +26,4 @@ printf("******Desligador de Computador ******\n*********************************
 		return 0;
 
 }
+testeeee
