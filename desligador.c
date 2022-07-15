@@ -1,28 +1,34 @@
 #include <stdio.h>
 
-  
+
 int main (){
 	int opt;
+
+	do{
 printf("******Desligador de Computador ******\n*************************************\n*************************************\n******** Digite a opcao desejada*****\n*************************************\n***1 = Desligar o Computador*********\n*************************************\n***2 = Reiniciar o Computador********\n*************************************\n***3 = Anular  o Desligamento********\n*************************************\n***4 = Fechar o Programa ************\n*************************************\n	");
-	//caso voce seja snob e use linux, use as linhas comentadas
+
 	scanf("%d", &opt);
-	
-	printf("A opcao selecionada foi %d! ", opt);
+
+	printf("A opcao selecionada foi %d! \n", opt);
 	switch (opt){
 		case 1:
 			system("shutdown -s -t 1200");
-			//system("shutdown -h +1200");
 			break;
-		case 2: 
+		case 2:
 			system("shutdown -r -t 1200");
-			//system("reboot -h +1200");
-		case 3: 
+			break;
+
+		case 3:
 			system("shutdown -a");
-			//system("reboot -c");
-			//system("shutdown -c");
-		default: 
-			system("exit");
+			break;
+
+		case 4:
+            system("exit");
+            break;
+		default:
+			printf("Opcao invalida.\n\n");
 	}
+	}while(opt!=4);
 		return 0;
 
 }
