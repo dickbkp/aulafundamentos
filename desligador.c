@@ -7,7 +7,7 @@ printf("******Desligador de Computador ******\n*********************************
 	//caso voce seja snob e use linux, use as linhas comentadas
 	scanf("%d", &opt);
 	
-	printf("A opcao selecionada foi %d! ", opt);
+	printf("A opcao seletionada foi %d! ", opt);
 	switch (opt){
 		case 1:
 			system("shutdown -s -t 1200");
