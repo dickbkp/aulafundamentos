@@ -5,6 +5,7 @@ int main (){
 	int opt;
 printf("******Desligador de Computador ******\n*************************************\n*************************************\n******** Digite a opcao desejada*****\n*************************************\n***1 = Desligar o Computador*********\n*************************************\n***2 = Reiniciar o Computador********\n*************************************\n***3 = Anular  o Desligamento********\n*************************************\n***4 = Fechar o Programa ************\n*************************************\n	");
 	scanf("%d", &opt);
+
 	printf("A opcao selecionada foi %d! ", opt);
 	switch (opt){
 		case 1:
