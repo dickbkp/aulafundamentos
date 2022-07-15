@@ -13,14 +13,13 @@ int main ()
     {
     case 1:
         system("shutdown -s -t 1200");
-
         break;
     case 2:
         system("shutdown -r -t 1200");
-
+        break;
     case 3:
         system("shutdown -a");
-
+        break;
     default:
         system("exit");
     }
